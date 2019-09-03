@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik", sans-serif;
+}
+
+li,
+a,
+button {
+	font-weight: 500;
+	/* color: #edf0f1; */
+	font-size: 1em;
+	color: #f3f4f5;
+}
+
+/* ==================================
+Header
+===================================== */
+header {
+	width: 100%;
+	height: 100vh;
+}
+.header_banner {
+	background-image: url("/images/homepage/alexander-popov-rl4RzSz9WI0-unsplash@2x.png");
+	image-orientation: flip;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.header_bg_color {
+	width: 100%;
+	height: 100vh;
+	background: #022c43;
+	opacity: 0.71;
+	position: relative;
+}
+.header_bg_color,
+.header_banner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+a {
+	text-decoration: none;
+}
+
+/* ==================================
+Navbar 
+===================================== */
+.header_nav {
+	justify-content: space-between;
+	padding: 3em 0 1em;
+}
+.content_wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.banner_text {
+	margin-top: 5em;
+	color: #f3f4f5;
+	text-align: center;
+}
+.logo {
+	cursor: pointer;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 1.5em;
+	color: #f3f4f5;
+	font-size: 2.5em;
+}
+.nav_links {
+	text-align: center;
+}
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 0 auto;
+	transition: 0.3s ease-out 0s;
+}
+
+.nav_links li a:hover {
+	color: #5babd6;
+}
+
+.cta {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	background-color: #2e81ad;
+	border-radius: 5px;
+	margin-top: 1em;
+	transition: 0.3s ease-out 0s;
+}
+.cta:hover {
+	background-color: #115173;
+}
+
+/* ==================================
+Section 
+===================================== */
+section {
+	margin: 5em 0;
+	display: block;
+	min-height: calc(100vh - 70px);
+}
+.section_text {
+	margin-bottom: 3em;
+}
+
+/* ==================================
+Footer 
+===================================== */
+footer {
+	width: 100%;
+	height: 300px;
+	background: #dadbe0;
+	/* opacity: 1;
+	position: fixed;
+	left: 0;
+	bottom: 0; */
+}
+
+.footer_wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.footer_wrapper h2 {
+	padding-top: 5em;
+}
+.footer_wrapper ul li {
+	display: block;
+	text-align: left;
+	padding: 1em 0;
+}
+.footer_wrapper ul li a {
+	color: #115173;
+}
+
+@media (min-width: 769px) {
+	.header_nav {
+		display: flex;
+	}
+	.cta {
+		padding: 1px 35px;
+		margin-top: 0;
+	}
+	.header_nav a {
+		background-color: #00283d;
+	}
+	.banner_text {
+		font-size: 3.5em;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
