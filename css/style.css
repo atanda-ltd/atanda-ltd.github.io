@@ -147,9 +147,12 @@ footer {
 	.cta {
 		padding: 1px 35px;
 		margin-top: 0;
+		text-align: left;
+		height: 2.4em;
 	}
-	.header_nav a {
-		background-color: #00283d;
+	.header_nav a,
+	.nav_links {
+		padding-top: 0.7em;
 	}
 	.banner_text {
 		font-size: 3.5em;
