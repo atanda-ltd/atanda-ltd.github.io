@@ -21,20 +21,23 @@ header {
 	width: 100%;
 	height: 100vh;
 }
-.header_banner {
-	background-image: url("/images/homepage/alexander-popov-rl4RzSz9WI0-unsplash@2x.png");
+.header_banner,
+.about_banner,
+.services_banner {
 	image-orientation: flip;
 	width: 100%;
 	height: 100vh;
 	position: relative;
-}
-
-.about_header {
-	background-image: url("/images/about-images/about-bg.jpg");
 	background-position: center;
-	width: 100%;
-	height: 100vh;
-	position: relative;
+}
+.header_banner {
+	background-image: url("/images/homepage/alexander-popov-rl4RzSz9WI0-unsplash@2x.png");
+}
+.about_banner {
+	background-image: url("/images/about-images/about-bg.jpg");
+}
+.services_banner {
+	background-image: url("/images/services-images/services-bg.jpg");
 }
 .header_bg_color {
 	width: 100%;
@@ -45,7 +48,8 @@ header {
 }
 .header_bg_color,
 .header_banner,
-.about_header {
+.about_banner,
+.services_banner {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -111,45 +115,69 @@ Navbar
 /* ==================================
 Section 
 ===================================== */
+.services {
+	display: block;
+	align-content: center;
+}
+.services img,
+.about-image img {
+	width: 100%;
+	height: auto;
+}
+.services-images-2 {
+	margin-left: auto;
+}
+.main-content figcaption {
+	padding: 15px 20px;
+	background-color: #022c43;
+	color: #ffffff;
+	font-weight: 300;
+}
+.section_text {
+	font-size: 2em;
+	color: #115173;
+	margin-bottom: 1em;
+}
 section {
 	margin: 5em 0;
 	display: block;
-	min-height: calc(100vh - 70px);
 }
-.section_text {
-	margin-bottom: 3em;
-}
-
 .main-content h3 {
 	font-size: 2em;
 	font-weight: 100;
 }
 .wrapper {
 	width: 100%;
-	margin: 5px auto 100px auto;
+	margin: 20px auto 100px auto;
 	text-align: center;
 	padding: 40px 10px 20px 10px;
 	background-color: #dadbe0;
 	font-size: 1.2em;
 }
-p {
-	font-weight: 500;
+.photo-wrapper {
+	margin-bottom: 50%;
+}
+.wrapper p {
+	font-weight: 100;
+}
+section h2 {
+	text-align: center;
+	font-weight: 100;
+	font-size: 2em;
+	margin-bottom: 2em;
 }
 
 /* ==================================
 Footer 
 ===================================== */
-footer {
-	width: 100%;
-	height: 300px;
-	background: #dadbe0;
-	/* opacity: 1;
-	position: fixed;
-	left: 0;
-	bottom: 0; */
-}
 
 .footer_wrapper {
+	height: auto;
+	width: 100%;
+	background-color: #dadbe0;
+	padding-bottom: 70px;
+}
+.footer_wrapper div {
 	width: 80%;
 	margin: 0 auto;
 }
@@ -171,11 +199,17 @@ footer {
 		display: flex;
 	}
 	.wrapper {
-		width: 60%;
-		margin: 15px auto 30px auto;
+		width: 80%;
+		margin: 150px auto 30px auto;
 		text-align: center;
 		padding: 50px 50px;
 		background-color: #dadbe0;
+	}
+	.services img {
+		width: 10px;
+	}
+	.services-images-2 {
+		margin-left: 10px;
 	}
 	.cta {
 		padding: 1px 35px;
@@ -199,5 +233,34 @@ footer {
 	.main-content div {
 		margin-left: 4em;
 		margin-top: 10%;
+	}
+	.footer-wrapper {
+		right: 0;
+		bottom: 0;
+		height: auto;
+	}
+	.photo-wrapper {
+		margin-bottom: 70%;
+	}
+	.wrapper {
+		margin-bottom: 150px;
+	}
+}
+
+@media (min-width: 768px) {
+	.services img {
+		width: 100%;
+	}
+	.services-images-2 {
+		margin-left: 20px;
+	}
+	.services-images-1 {
+		margin-left: auto;
+	}
+	.services-images-2 {
+		margin-right: auto;
+	}
+	.services-images {
+		margin: 0 auto;
 	}
 }
