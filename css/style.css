@@ -139,6 +139,9 @@ Section
 	color: #115173;
 	margin-bottom: 1em;
 }
+.section_text-about {
+	margin: 6em 0;
+}
 section {
 	margin: 5em 0;
 	display: block;
