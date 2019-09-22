@@ -29,9 +29,10 @@ header {
 	height: 100vh;
 	position: relative;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 .header_banner {
-	background-image: url("/images/homepage/alexander-popov-rl4RzSz9WI0-unsplash@2x.png");
+	background-image: url("/images/homepage/city-homepage.jpg");
 }
 .about_banner {
 	background-image: url("/images/about-images/about-bg.jpg");
