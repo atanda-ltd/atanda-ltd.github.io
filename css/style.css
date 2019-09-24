@@ -19,14 +19,14 @@ Header
 ===================================== */
 header {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 }
 .header_banner,
 .about_banner,
 .services_banner {
 	image-orientation: flip;
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -42,7 +42,7 @@ header {
 }
 .header_bg_color {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	background: #022c43;
 	opacity: 0.71;
 	position: relative;
